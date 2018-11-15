@@ -1,0 +1,1 @@
+# Simple intro to testing django applications using py.test
