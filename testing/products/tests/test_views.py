@@ -30,3 +30,4 @@ class TestViews(TestCase):
         request.user = AnonymousUser()
         response = product_detail(request, pk=1)
         assert response.status_code == 302
+        assert 'accounts/login' in response.url
